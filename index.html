@@ -49,56 +49,23 @@
           <label for="first_name">Description</label>
         </div>
         <div class="input-field col s6">
-                <input id="email" type="email" class="validate" name="email">
+                <input id="email" type="email" class="validate" >
           <label for="last_name">Email</label>
         </div>
-      </div>
+    </div> 
       <div class="row">
       </div>
       <div class="row">
       </div>
       <div class="row">
         
-  <!-- <button class="btn waves-effect button waves-light" type="submit" id="button">Save To Contacts -->
-        <a class=" button btn-floating btn-large  waves-effect waves-light red"><i class="material-icons" alignment='centers'>add</i></a>
-      <!-- </button> -->
+  <button class="btn-floating btn-large  waves-effect waves-light red button" type="submit" id="button"><i class="material-icons" alignment='centers'>add</i></button>
+
       </div>
     
   </div>
 </form>
     </div>
-
-    <!-- <script src="main.js"></script> -->
-
-    <script>
-        // let contacts = [];
-
-var myname= document.getElementById("myname").innerText;
-var email= document.getElementById("email").value
-var phone=document.getElementById("phone").value;
-var description = document.getElementById("description").value;
-var theForm= document.getElementsByTagName("form");
-
-theForm.addEventListener("click", function(e){
-    e.preventDefault();
-    displayContacts();
-});
-
-function Process() {
-    //no need for validation
-
-    
-}
-function displayContacts() {
-   // <!-- alert(myname); -->
-    alert(email);
-    //console.log(phone);
-    //console.log(description);
-    
-}
-// alert('working!');
-
-    </script>
 
 </body>
 </html>

@@ -1,27 +1,14 @@
 // let contacts = [];
 
-var myname= document.getElementById("myname").innerText;
+document.onload(){
+var myname= document.getElementById("myname");
 var email= document.getElementById("email").value
 var phone=document.getElementById("phone").value;
 var description = document.getElementById("description").value;
 var theForm= document.getElementById("theForm");
-
-theForm.addEventListener("click", function(e){
+function run(e) {
     e.preventDefault();
-    confirm(' add contact to storage?');
-});
-
-function Process() {
-    //no need for validation
-
+    alert(myname.value);
     
-}
-function displayContacts(e) {
-    
-    console.log(myname);
-    console.log(email);
-    console.log(phone);
-    console.log(description);
-    
-}
-// alert('working!');
+};
+};
