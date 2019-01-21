@@ -59,9 +59,9 @@
       </div>
       <div class="row">
         
-  <button class="btn waves-effect button waves-light" type="submit" id="button">Save To Contacts
-        <i class="material-icons right">send</i>
-      </button>
+  <!-- <button class="btn waves-effect button waves-light" type="submit" id="button">Save To Contacts -->
+        <a class=" button btn-floating btn-large  waves-effect waves-light red"><i class="material-icons" alignment='centers'>add</i></a>
+      <!-- </button> -->
       </div>
     
   </div>
@@ -77,11 +77,10 @@ var myname= document.getElementById("myname").innerText;
 var email= document.getElementById("email").value
 var phone=document.getElementById("phone").value;
 var description = document.getElementById("description").value;
-var theForm= document.getElementById("button");
 
 theForm.addEventListener("click", function(e){
     e.preventDefault();
-    displayContacts()
+    displayContacts();
 });
 
 function Process() {
@@ -90,10 +89,10 @@ function Process() {
     
 }
 function displayContacts() {
-    alert(myname);
+   // <!-- alert(myname); -->
     alert(email);
-    console.log(phone);
-    console.log(description);
+    //console.log(phone);
+    //console.log(description);
     
 }
 // alert('working!');

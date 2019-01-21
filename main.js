@@ -8,6 +8,7 @@ var theForm= document.getElementById("theForm");
 
 theForm.addEventListener("click", function(e){
     e.preventDefault();
+    confirm(' add contact to storage?');
 });
 
 function Process() {
