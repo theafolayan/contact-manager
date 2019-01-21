@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+<h1 class="title"> Contact Manager</h1>
+
+
+<div class="row">
+    <form id= "theForm" class="col s12" >
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="myname" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="phone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+    
+  </div>
+
+
+
+<div class="row">
+    
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Description" id="description" type="text" class="validate">
+          <label for="first_name">Description</label>
+        </div>
+        <div class="input-field col s6">
+                <input id="email" type="email" class="validate" name="email">
+          <label for="last_name">Email</label>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+      <div class="row">
+      </div>
+      <div class="row">
+        
+  <button class="btn waves-effect button waves-light" type="submit" id="button">Save To Contacts
+        <i class="material-icons right">send</i>
+      </button>
+      </div>
+    
+  </div>
+</form>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+
+    <script>
+        // let contacts = [];
+
+var myname= document.getElementById("myname").innerText;
+var email= document.getElementById("email").value
+var phone=document.getElementById("phone").value;
+var description = document.getElementById("description").value;
+var theForm= document.getElementById("button");
+
+theForm.addEventListener("click", function(e){
+    e.preventDefault();
+    displayContacts()
+});
+
+function Process() {
+    //no need for validation
+
+    
+}
+function displayContacts() {
+    alert(myname);
+    alert(email);
+    console.log(phone);
+    console.log(description);
+    
+}
+// alert('working!');
+
+    </script>
+
+</body>
+</html>
